@@ -11,7 +11,7 @@
 
   <title>
     
-      404: Page not found &middot; Hydeout
+      Edge Case &middot; Hydeout
     
   </title>
 
@@ -45,7 +45,7 @@
 </head>
 
 
-  <body class="default">
+  <body class="category">
 
     <div id="sidebar">
   <header>
@@ -135,7 +135,7 @@
 
   
     
-      <a class="category-link "
+      <a class="category-link  active"
           href="/category/edge-case.html">Edge Case</a>
     
   
@@ -238,9 +238,48 @@
 </div>
 
     <main class="container">
-      <div class="page">
-  <h1 class="page-title">404: Page not found</h1>
-  <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="">Head back home</a> to try finding it again.</p>
+      <header>
+  <h1 class="page-title">Edge Case</h1>
+</header>
+<div class="content">
+  
+  <p>Sample category page. You need to create a page for each category.
+The category is inferred from the title of the page, but you can also
+specify it with the <code class="highlighter-rouge">category</code> attribute in the front matter.</p>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">category</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">My Category</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>Or …</p>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">category</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Fancy Title</span>
+<span class="na">category</span><span class="pi">:</span> <span class="s">My Category</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>Posts get listed below here.</p>
+
+
+
+<ul class="posts-list">
+  
+  
+    <li>
+      <h3>
+        <a href="/edge%20case/2009/06/01/edge-case-many-tags.html">
+          Edge Case: Many Tags!!!
+          <small>01 Jun 2009</small>
+        </a>
+      </h3>
+    </li>
+  
+</ul>
+
 </div>
 
     </main>
